@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaTeX 示例</title>
+    <link rel="stylesheet" href="katex.min.css">
+    <script src="katex.min.js"></script>
+    <script defer src="auto-render.min.js"></script>
+</head>
+<body>
+    <p>这是一个简单的数学公式: \( E = mc^2 \)</p>
+    <p>$$
+        \int_{-\infty}^\infty e^{-x^2} dx = \sqrt{\pi}
+    $$</p>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        renderMathInElement(document.body, {
+    
+        });
+    });
+</script>
+</html>

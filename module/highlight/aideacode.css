@@ -1,0 +1,111 @@
+:root {
+  /* 默认颜色 */
+  --color: #38393e;
+  --comment-color: #9b9b9b;
+  --doctag-color: #e13157;
+  --deletion-color: #df601b;
+  --literal-color: #2d89f3;
+  --addition-color: #50a14f;
+  --attr-color: #015e98;
+  --built-in-color: #d49201;
+  --bullet-color: #0075d4;
+}
+
+  /* 深色模式颜色 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color: #e0e0e0;
+    --comment-color: #666666;
+    --doctag-color: #ff6384;
+    --deletion-color: #ff9f40;
+    --literal-color: #6574cd;
+    --addition-color: #98c379;
+    --attr-color: #c678dd;
+    --built-in-color: #e5c07b;
+    --bullet-color: #61afef;
+  }
+}
+
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0em;
+}
+
+code.hljs {
+  padding: 0px 0px;
+}
+
+.hljs {
+  color: var(--color);
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: var(--comment-color);
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-formula,
+.hljs-keyword {
+  color: var(--doctag-color);
+}
+
+.hljs-deletion,
+.hljs-name,
+.hljs-section,
+.hljs-selector-tag,
+.hljs-subst {
+  color: var(--deletion-color);
+}
+
+.hljs-literal {
+  color: var(--literal-color);
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string,
+.hljs-regexp,
+.hljs-string {
+  color: var(--addition-color);
+}
+
+.hljs-attr,
+.hljs-number,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-pseudo,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+  color: var(--attr-color);
+}
+
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-symbol,
+.hljs-title {
+  color: var(--bullet-color);
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title,
+.hljs-title.class_ {
+  color: var(--built-in-color);
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: 700;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
