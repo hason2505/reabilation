@@ -1,4 +1,4 @@
-# 欢迎使用 Jason world
+# 欢迎使用Hason world
 
 
 MarkNotes 是一个笔记引擎，将使用 Markdown 编写的笔记以网页的形式展示。
